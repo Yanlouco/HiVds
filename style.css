@@ -19,6 +19,10 @@ nav {
   background: #ec3c3c;
 }
 
+.hidden {
+  background: rgba(236, 60, 60, 0.5);
+}
+
 nav ul {
   display: flex;
   margin-right: 20px;
@@ -50,7 +54,7 @@ nav ul li a:hover {
 }
 
 main {
-  background-image: url(../asset/backgroundnew3.svg);
+  background-image: url(asset/backgroundnew3.svg);
   height: 95vh;
   background-position: 12px;
   display: grid;
@@ -149,8 +153,8 @@ marquee {
 }
 
 #main {
-  margin-top: 100px;
-  background-image: url("/asset/bg-main.svg");
+  padding-top: 100px;
+  background-image: url(asset/bg-main.svg);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
@@ -186,7 +190,7 @@ marquee {
 
 footer {
   background: #f37676;
-  background-image: url(/asset/footer-svg.svg);
+  background-image: url(asset/footer-svg.svg);
   background-position: top left;
   background-repeat: no-repeat;
 }
