@@ -3,10 +3,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-}
-
-body {
   font-family: "Poppins", "Sans-Serif";
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -51,6 +49,11 @@ nav ul li a:hover {
   font-size: 35px;
   font-weight: bold;
   margin-left: 25px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
 }
 
 main {
@@ -373,7 +376,7 @@ footer button {
     font-size: 35px;
   }
   #main {
-    background-image: url(/asset/bg-main.svg);
+    background-image: url(asset/bg-main.svg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -506,7 +509,7 @@ footer button {
     font-size: 35px;
   }
   #main {
-    background-image: url(/asset/bg-main.svg);
+    background-image: url(asset/bg-main.svg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;

@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Poppins", "Sans-Serif";
+}
+
+nav {
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  height: 70px;
+  background: #ec3c3c;
+}
+
+.hidden {
+  background: rgba(236, 60, 60, 0.5);
+}
+
+nav ul {
+  display: flex;
+  margin-right: 20px;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+}
+
+nav ul li a:hover {
+  padding: 8px;
+  border-radius: 2px;
+  background-color: #8a1414;
+  transition: 0.2s ease-in-out;
+}
+
+.logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+#main {
+  background-image: url(../asset/bg-berita.svg);
+}
+
+#main img:hover {
+  transform: rotateY(180deg);
+  transition: all 0.2s;
+}
+
+#main .berita-1 {
+  padding-top: 100px;
+}
+
+#main .berita-1,
+.berita-2,
+.berita-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .berita-1 .text,
+.berita-3 .text {
+  border-radius: 22px;
+  margin-right: 50px;
+  padding: 25px;
+  background-color: #be2020;
+}
+
+#main .berita-2 .text {
+  background: #c44f4f;
+  border-radius: 22px;
+  margin-left: 50px;
+  padding: 25px;
+}
+
+#main img {
+  margin: 50px;
+}
+
+#main p,
+h3 {
+  text-align: center;
+  margin: 30px;
+  color: #fff;
+}
+
+#main h3 {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+#main p {
+  font-size: 1rem;
+}
+
+#main button {
+  border: none;
+  color: #fff;
+  background: #923737;
+  border-radius: 0px 0px 6px 6px;
+  height: 50px;
+  width: 150px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  width: 50px;
+  height: 28px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+  z-index: 3;
+}
+
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* Layar HP - TABLET */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .menu-toggle input {
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    width: 30px;
+    height: 28px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+  }
+  nav ul {
+    margin: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #c44f4f;
+    z-index: 3;
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #main .berita-1,
+  .berita-2,
+  .berita-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main .berita-2 {
+    flex-wrap: wrap-reverse;
+  }
+
+  #main .berita-1 .text,
+  .berita-3 .text {
+    border-radius: 22px;
+    margin-right: 0px;
+    width: 100vw;
+    padding: 10px;
+    background-color: #be2020;
+  }
+  #main .berita-2 .text {
+    background: #c44f4f;
+    border-radius: 22px;
+    margin-left: 0px;
+    width: 100vw;
+    padding: 25px;
+  }
+  #main img {
+    width: 55vw;
+    margin: 50px 0;
+  }
+  #main p,
+  h3 {
+    text-align: center;
+    margin: 30px;
+    color: #fff;
+  }
+  #main h3 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  #main p {
+    font-size: 12px;
+  }
+  #main button {
+    border: none;
+    color: #fff;
+    background: #923737;
+    border-radius: 0px 0px 6px 6px;
+    height: 50px;
+    width: 150px;
+  }
+  .hidden {
+    background: rgba(236, 60, 60, 0.5);
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .menu-toggle input {
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    width: 30px;
+    height: 28px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+  }
+  nav ul {
+    margin: 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: #dd6262;
+    z-index: 3;
+    transform: translateY(-100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  nav ul li a {
+    padding-left: 50px;
+  }
+
+  nav ul.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hidden {
+    background: rgba(236, 60, 60, 0.5);
+  }
+}
