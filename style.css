@@ -68,8 +68,12 @@ nav ul li a:hover::before {
   width: 100%;
 }
 
+nav .logo img {
+  width: 5vw;
+  height: 5vw;
+}
+
 .logo {
-  color: #fff;
   font-size: 35px;
   font-weight: bold;
   margin-left: 25px;
@@ -253,10 +257,18 @@ article img {
   border-radius: 50%;
 }
 
-article img:hover {
+article .artic2 img:hover,
+article .artic3 img:hover {
   transform: scale(1.15);
   transition: 0.5s;
   margin: 0px 20px;
+}
+
+article .artic img:hover {
+  transition: 0.5s;
+  transform: scale(1.15);
+  margin: 0px;
+  margin-top: 20px;
 }
 
 #main {
@@ -301,7 +313,7 @@ article img:hover {
 }
 
 #main1 img:hover {
-  transform: rotateY(180deg);
+  transform: rotateZ(360deg);
   transition: all 0.7s;
 }
 
