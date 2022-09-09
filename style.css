@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   font-family: "Poppins", "Sans-Serif";
-  scroll-behavior: smooth;
 }
 
 nav {
@@ -175,11 +179,85 @@ marquee {
   text-decoration: none;
 }
 
+article {
+  display: grid;
+  grid-template-columns: 350px 1fr 1fr;
+  background-image: url(asset/bg-article.svg);
+}
+
+article .artic .text {
+  background-image: url(asset/article-bg.svg);
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  margin: 0px 20px;
+}
+
+article .artic .text h1 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+article .artic .text h3 {
+  color: #000;
+}
+
+article .artic2 .text {
+  background-image: url(asset/article-bg.svg);
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  margin: 0px 20px;
+}
+
+article .artic2 .text h1 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+article .artic2 .text h3 {
+  color: #000;
+}
+
+article .artic3 .text {
+  background-image: url(asset/article-bg.svg);
+  background-repeat: no-repeat;
+  padding: 30px 0;
+  margin: 0px 20px;
+}
+
+article .artic3 .text h1 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+article .artic3 .text h3 {
+  color: #000;
+}
+
+article .imaga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article img {
+  margin: 20px 10px;
+  width: 5vw;
+  height: 15vh;
+  border-radius: 50%;
+}
+
+article img:hover {
+  transform: scale(1.15);
+  transition: 0.5s;
+  margin: 0px 20px;
+}
+
 #main {
   padding-top: 100px;
   background-image: url(asset/bg-main.svg);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-size: cover;
   justify-content: space-around;
   align-items: center;
 }
@@ -211,11 +289,84 @@ marquee {
   font-size: 20px;
 }
 
+#main1 {
+  background-color: #da6161;
+  /* background-image: url(asset/bg-berita.svg); */
+}
+
+#main1 img:hover {
+  transform: rotateY(180deg);
+  transition: all 0.7s;
+}
+
+#main1 .berita-1 {
+  padding-top: 100px;
+}
+
+#main1 .berita-1,
+.berita-2,
+.berita-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main1 .berita-1 .text,
+.berita-3 .text {
+  border-radius: 22px;
+  margin-right: 50px;
+  padding: 25px;
+  background-color: #be4040;
+}
+
+#main1 .berita-2 .text {
+  background: #be4040;
+  border-radius: 22px;
+  margin-left: 50px;
+  padding: 25px;
+}
+
+#main1 img {
+  margin: 50px;
+}
+
+#main1 p,
+h3 {
+  text-align: center;
+  margin: 30px;
+  color: #fff;
+}
+
+#main1 h3 {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+#main1 p {
+  font-size: 1rem;
+}
+
+#main1 button {
+  background-color: transparent;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+#main1 button:hover {
+  transition: all 0.5s;
+  border: none;
+  background: #ff6262;
+  border-radius: 5px;
+}
+
 footer {
   background: #f37676;
   background-image: url(asset/footer-svg.svg);
   background-position: top left;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 footer .foot {
@@ -226,12 +377,18 @@ footer .foot {
 footer .foot .foot-text {
   width: 50vw;
   font-size: 18px;
-  margin-left: 2vw;
+  margin-left: 6.5vw;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 30px;
   height: 50vh;
-  margin-top: 135px;
+  margin-top: 150px;
+  color: #000;
   padding: 50px;
+}
+
+.foot .foot-kasus p {
+  font-size: 40px;
+  margin: -5px;
 }
 
 .foot .foot-text span {
@@ -239,12 +396,20 @@ footer .foot .foot-text {
   background: #ee6d6f;
 }
 
+.foot .foot-kasus button {
+  margin-top: 10px;
+}
+
+.foot .foot-kasus h1 {
+  margin-bottom: 0px;
+}
+
 .foot .foot-kasus .terjangkit {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #e45959;
+  background: #cd4040;
   height: 35vh;
 }
 
@@ -253,7 +418,7 @@ footer .foot .foot-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #e46363;
+  background: #ee4747;
   height: 35vh;
 }
 
@@ -262,7 +427,7 @@ footer .foot .foot-text {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f88383;
+  background: #f05959;
   height: 36vh;
 }
 
@@ -337,6 +502,60 @@ footer button {
     font-weight: 900;
     font-size: 45px;
     text-transform: uppercase;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  article .artic .text {
+    background-image: url(asset/article-bg-responsive.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  article .artic2 .text {
+    background-image: url(asset/article-bg-responsive.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  article .artic3 .text {
+    background-image: url(asset/article-bg-responsive.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  article img {
+    margin: 20px 10px;
+    width: 15vw;
+    height: 20vw;
+    border-radius: 50%;
+  }
+  #main1 .berita-1 .text,
+  .berita-3 .text {
+    border-radius: 22px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #be4040;
+  }
+  #main1 .berita-2 .text {
+    background-color: #be4040;
+    border-radius: 22px;
+    margin-left: 10px;
+    padding: 5px;
+  }
+  footer .foot .foot-text {
+    margin-left: 4vw;
+  }
+  nav ul li a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    overflow-x: hidden;
+    transform: color 1s;
+    z-index: 2;
   }
 }
 
@@ -522,6 +741,7 @@ footer button {
 
   .foot .foot-kasus {
     display: flex;
+    color: #fff;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -568,6 +788,39 @@ footer button {
     padding: 8px 25px;
     border-radius: 5px;
     margin-bottom: 25px;
+  }
+}
+
+/* LAYAR CUSTOM */
+@media screen and (max-width: 768px) {
+  nav ul li a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    overflow-x: hidden;
+    transform: color 1s;
+    z-index: 2;
+  }
+  #main1 img {
+    margin: 50px;
+    width: 35vw;
+  }
+  #main1 .berita-1 .text,
+  .berita-3 .text {
+    border-radius: 22px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    background-color: #be2020;
+  }
+  #main1 .berita-2 .text {
+    background: #c44f4f;
+    border-radius: 22px;
+    margin-left: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
   }
 }
 
@@ -644,6 +897,39 @@ footer button {
   main .main-text p {
     font-size: 35px;
     margin-left: 2vw;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  article .artic .text h1,
+  .artic2 .text h1,
+  .artic3 .text h1 {
+    text-align: center;
+    margin-top: 100px;
+  }
+  article .artic .text h3,
+  .artic2 .text h3,
+  .artic3 .text h3 {
+    color: #000;
+    font-size: 15px;
+  }
+  article img {
+    margin: 20px 10px;
+    width: 25vw;
+    height: 15vh;
+    border-radius: 50%;
+  }
+  article .artic .text,
+  .artic2 .text,
+  .artic3 .text {
+    background-image: url(asset/article-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    margin: 0 20px;
   }
   #main {
     background-image: url(asset/bg-main.svg);
@@ -737,6 +1023,63 @@ footer button {
     margin-bottom: 2vh;
     width: 100vw;
   }
+  #main1 .berita-1,
+  .berita-2,
+  .berita-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main1 .berita-2 {
+    flex-wrap: wrap-reverse;
+  }
+
+  #main1 .berita-1 .text,
+  .berita-3 .text {
+    border-radius: 22px;
+    margin-right: 0px;
+    width: 100vw;
+    padding: 10px;
+    margin-bottom: 5vh;
+    background-color: #be4040;
+  }
+  #main1 .berita-2 .text {
+    background-color: #be4040;
+    border-radius: 22px;
+    margin-left: 0px;
+    width: 100vw;
+    padding: 25px;
+  }
+  #main1 img {
+    width: 55vw;
+    margin: 50px 0;
+  }
+  #main1 p,
+  h3 {
+    text-align: center;
+    margin: 30px;
+    color: #fff;
+  }
+  #main1 h3 {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  #main1 p {
+    font-size: 12px;
+  }
+  #main1 button {
+    border: none;
+    color: #fff;
+    background: #923737;
+    border-radius: 0px 0px 6px 6px;
+    height: 50px;
+    width: 200px;
+  }
+  #main1 .berita-1 {
+    padding-top: 20px;
+  }
 }
 
 /* Layar HP */
@@ -788,7 +1131,7 @@ footer button {
   }
   main .image img {
     margin-left: 0px;
-    margin-top: -25vh;
+    margin-top: 0;
     height: 35vh;
   }
   main .main-text .active {
@@ -798,7 +1141,7 @@ footer button {
   main .main-text {
     color: #fff;
     margin-left: 0px;
-    margin-bottom: -10vh;
+    margin-bottom: -30vh;
     line-height: 0;
     letter-spacing: 2px;
   }
@@ -817,6 +1160,39 @@ footer button {
   main .main-text p {
     font-size: 35px;
     margin-left: 10vw;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  article .artic .text h1,
+  .artic2 .text h1,
+  .artic3 .text h1 {
+    text-align: center;
+    margin-top: 100px;
+  }
+  article .artic .text h3,
+  .artic2 .text h3,
+  .artic3 .text h3 {
+    color: #000;
+    font-size: 15px;
+  }
+  article img {
+    margin: 20px 10px;
+    width: 25vw;
+    height: 15vh;
+    border-radius: 50%;
+  }
+  article .artic .text,
+  .artic2 .text,
+  .artic3 .text {
+    background-image: url(asset/article-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    margin: 0 20px;
   }
   #main {
     background-image: url(asset/bg-main.svg);
@@ -910,5 +1286,16 @@ footer button {
     height: 25vh;
     margin-bottom: 2vh;
     width: 100vw;
+  }
+  .foot .foot-kasus p {
+    font-size: 30px;
+    margin: -10px;
+  }
+  footer button {
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-top: 28px;
   }
 }

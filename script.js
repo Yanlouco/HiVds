@@ -6,6 +6,6 @@ menuToggle.addEventListener("click", function () {
 });
 
 window.addEventListener("scroll", function () {
-  var nav = document.querySelector("nav");
+  let nav = document.querySelector("nav");
   nav.classList.toggle("hidden", window.scrollY > 0);
 });
