@@ -321,6 +321,7 @@ article .artic img:hover {
 }
 
 #main .text p {
+  margin-top: -35px;
   margin-left: 45px;
   font-size: 20px;
 }
@@ -635,7 +636,7 @@ footer button:hover {
 /* Custom */
 @media screen and (max-width: 1280px) {
   .foot .foot-text p {
-    font-size: 23px;
+    font-size: 17px;
   }
 }
 
@@ -702,7 +703,7 @@ footer button:hover {
     z-index: 2;
   }
   .foot .foot-text p {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -878,7 +879,7 @@ footer button:hover {
   }
 
   .foot .foot-text p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .foot .foot-text span {
@@ -1141,13 +1142,13 @@ footer button:hover {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 30px;
     margin-top: 50px;
-    padding: 50px;
+    padding: 80px 50px;
   }
   footer .foot .foot-text h1 {
     font-size: 20px;
   }
   footer .foot .foot-text p {
-    font-size: 15px;
+    font-size: 11.2px;
   }
   footer .foot .foot-kasus {
     margin-top: 100px;
@@ -1404,20 +1405,20 @@ footer button:hover {
     justify-content: center;
   }
   footer .foot .foot-text {
-    width: 60vw;
+    width: 80vw;
     font-size: 15px;
     margin-left: 0px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 30px;
     height: 90vw;
     margin-top: 50px;
-    padding: 50px;
+    padding: 20px;
   }
   footer .foot .foot-text h1 {
     font-size: 20px;
   }
   footer .foot .foot-text p {
-    font-size: 14px;
+    font-size: 11px;
   }
   footer .foot .foot-kasus {
     margin-top: 100px;
