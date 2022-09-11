@@ -339,6 +339,7 @@ article .artic img:hover {
 #solusi h1,
 h2 {
   color: #fff;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -351,6 +352,7 @@ h2 {
 }
 
 #solusi h1 span.active {
+  font-weight: bold;
   padding: 5px;
   background-color: #d89999;
 }
@@ -359,11 +361,7 @@ h2 {
   font-weight: 900;
 }
 
-#solusi .solusi-line1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
+#solusi .solusi-line1,
 #solusi .solusi-line2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
