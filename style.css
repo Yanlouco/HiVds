@@ -1,3 +1,4 @@
+/* Import Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
 
 html {
@@ -10,6 +11,8 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", "Sans-Serif";
 }
+
+/* Navbar Start */
 
 nav {
   position: fixed;
@@ -84,7 +87,13 @@ nav .logo img {
   color: #fff;
 }
 
+/* Navbar End */
+
+/* Main Start */
+
 main {
+  /* Asset From Freepik
+  Link : https://www.freepik.com/free-photo/red-ribbon-with-white-background-hiv-aids-ribbon-awareness_20111984.htm#query=hiv%20aids&position=49&from_view=search */
   background-image: url(asset/backgroundnew3.svg);
   height: 95vh;
   background-position: 12px;
@@ -183,6 +192,10 @@ marquee {
   text-decoration: none;
 }
 
+/* Main End */
+
+/* Article Start */
+
 article {
   display: grid;
   grid-template-columns: 350px 1fr 1fr;
@@ -271,6 +284,10 @@ article .artic img:hover {
   margin-top: 20px;
 }
 
+/* Article End */
+
+/* Section Main Start */
+
 #main {
   padding-top: 100px;
   background-image: url(asset/bg-main.svg);
@@ -308,6 +325,80 @@ article .artic img:hover {
   font-size: 20px;
 }
 
+/* Section Main End */
+
+/* Section Solusi Start */
+
+#solusi {
+  padding-top: 50px;
+  background-image: url(asset/bg-solusi.svg);
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+
+#solusi h1,
+h2 {
+  color: #fff;
+  text-align: center;
+}
+
+#solusi h1 {
+  font-size: 35px;
+}
+
+#solusi h2 {
+  font-size: 30px;
+}
+
+#solusi h1 span.active {
+  padding: 5px;
+  background-color: #d89999;
+}
+
+#solusi h2 span.active {
+  font-weight: 900;
+}
+
+#solusi .solusi-line1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#solusi .solusi-line2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#solusi .solusi-line1 .box-1,
+#solusi .solusi-line2 .box-2 {
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+  background-color: #793131;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+#solusi a {
+  color: #f87777;
+}
+
+#solusi .solusi-line1 .box-1:hover,
+#solusi .solusi-line2 .box-2:hover {
+  transition: all 1s;
+  margin: 0 10px;
+  background-color: #cc3d3d;
+  border: 4px solid #fafafa;
+}
+
+#solusi i {
+  padding-top: 25px;
+  font-size: 60px;
+}
+
+/* Section Solusi End */
+
+/* Section Main 1 Start */
 #main1 {
   background-color: #da6161;
 }
@@ -393,8 +484,14 @@ h3 {
   border-radius: 5px;
 }
 
+/* Section Main1 End */
+
+/* Footer Start */
+
 footer {
   background: #f37676;
+  /* Asset From Freepik
+  Link : https://www.freepik.com/free-photo/red-ribbon-with-white-background-hiv-aids-ribbon-awareness_20111984.htm#query=hiv%20aids&position=49&from_view=search */
   background-image: url(asset/footer-svg.svg);
   background-position: top left;
   background-repeat: no-repeat;
@@ -419,7 +516,7 @@ footer .foot .foot-text {
 }
 
 .foot .foot-kasus p {
-  font-size: 40px;
+  font-size: 30px;
   margin: -5px;
 }
 
@@ -477,6 +574,10 @@ footer button:hover {
   transition: all 0.5s;
 }
 
+/* Footer End */
+
+/* Toogle Start */
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -529,6 +630,15 @@ footer button:hover {
 .menu-toggle input:checked ~ span:nth-child(3) {
   opacity: 0;
   transform: scale(0);
+}
+
+/* Toogle End */
+
+/* Custom */
+@media screen and (max-width: 1280px) {
+  .foot .foot-text p {
+    font-size: 23px;
+  }
 }
 
 /* LAPTOP */
@@ -592,6 +702,9 @@ footer button:hover {
     overflow-x: hidden;
     transform: color 1s;
     z-index: 2;
+  }
+  .foot .foot-text p {
+    font-size: 20px;
   }
 }
 
@@ -825,6 +938,9 @@ footer button:hover {
     border-radius: 5px;
     margin-bottom: 25px;
   }
+  #solusi {
+    background-size: cover;
+  }
 }
 
 /* LAYAR CUSTOM */
@@ -857,6 +973,15 @@ footer button:hover {
     margin-left: 10px;
     padding: 5px;
     margin-bottom: 20px;
+  }
+  #solusi {
+    background-size: cover;
+  }
+  #solusi .solusi-line1,
+  #solusi .solusi-line2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
   }
 }
 
@@ -989,6 +1114,14 @@ footer button:hover {
     padding-right: 25px;
     text-align: justify;
   }
+  #solusi {
+    background-size: cover;
+  }
+  #solusi .solusi-line1,
+  #solusi .solusi-line2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   #main .text h1 {
     margin-left: 45px;
     font-size: 20px;
@@ -1016,7 +1149,7 @@ footer button:hover {
     font-size: 20px;
   }
   footer .foot .foot-text p {
-    font-size: 14px;
+    font-size: 15px;
   }
   footer .foot .foot-kasus {
     margin-top: 100px;
@@ -1257,6 +1390,14 @@ footer button:hover {
   #main .text p {
     margin-left: 45px;
     font-size: 15px;
+  }
+  #solusi {
+    background-size: cover;
+  }
+  #solusi .solusi-line1,
+  #solusi .solusi-line2 {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   footer .foot {
     display: flex;
