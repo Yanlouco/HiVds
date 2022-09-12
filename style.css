@@ -478,7 +478,7 @@ h3 {
 }
 
 #main1 button:hover {
-  transition: all 0.5s;
+  transition: all 1s;
   border: none;
   background: #ff6262;
   border-radius: 5px;
@@ -754,6 +754,12 @@ footer button:hover {
   .foot .foot-kasus h1 {
     font-size: 25px;
     margin-bottom: 0px;
+  }
+  #main .text p {
+    margin-top: -35px;
+    margin-left: 45px;
+    font-size: 20px;
+    text-align: start;
   }
 }
 
@@ -1040,7 +1046,7 @@ footer button:hover {
     border: 2px solid rgba(255, 255, 255, 1);
   }
   #main1 button:hover {
-    transition: all 0.5s;
+    transition: all 1s;
     border: none;
     background: #ff6262;
     border-radius: 5px;
@@ -1097,7 +1103,7 @@ footer button:hover {
     transition: all 1s;
     opacity: 0;
   }
-  nav ul.slide {
+  nav ul.slider {
     opacity: 1;
     transform: translateY(0);
   }
@@ -1328,7 +1334,7 @@ footer button:hover {
     border: 2px solid rgba(255, 255, 255, 1);
   }
   #main1 button:hover {
-    transition: all 0.5s;
+    transition: all 1s;
     border: none;
     background: #ff6262;
     border-radius: 5px;
@@ -1405,10 +1411,10 @@ footer button:hover {
   }
 
   nav ul li a {
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
-  nav ul.slide {
+  nav ul.slider {
     opacity: 1;
     transform: translateY(0);
   }
@@ -1611,7 +1617,7 @@ footer button:hover {
     border: 2px solid rgba(255, 255, 255, 1);
   }
   #main1 button:hover {
-    transition: all 0.5s;
+    transition: all 2s;
     border: none;
     background: #ff6262;
     border-radius: 5px;

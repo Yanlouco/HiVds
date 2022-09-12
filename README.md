@@ -1,1 +1,1 @@
-# HiVds by : https://yanasbruh.github.io/HiVds/
+# HiVids by : https://yanasbruh.github.io/HiVds/
