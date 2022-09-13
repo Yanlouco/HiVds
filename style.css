@@ -635,10 +635,20 @@ footer button:hover {
 
 /* Toogle End */
 
+@media screen and (min-width: 1440px) {
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 60px 30px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 /* Custom */
 @media screen and (max-width: 1280px) {
   .foot .foot-text p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 
@@ -716,6 +726,13 @@ footer button:hover {
     margin-top: 30px;
     margin-bottom: 70px;
     height: 60vh;
+  }
+}
+
+/* Custom */
+@media screen and (width: 1000px) {
+  .foot .foot-text p {
+    font-size: 12px;
   }
 }
 
@@ -1198,7 +1215,8 @@ footer button:hover {
     border-radius: 25px;
     color: #fff;
     margin-top: -85px;
-    margin-left: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding-right: 25px;
     text-align: justify;
   }
