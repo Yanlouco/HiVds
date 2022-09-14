@@ -680,6 +680,9 @@ footer button:hover {
     text-align: left;
     font-size: 20px;
   }
+  .foot .foot-text p {
+    font-size: 18px;
+  }
 }
 
 /* Custom */
