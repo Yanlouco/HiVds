@@ -162,6 +162,7 @@ main .main-text .active-1 {
 
 marquee {
   background: #a22222;
+  padding-bottom: 7px;
 }
 
 .news p {
@@ -300,7 +301,7 @@ article .artic img:hover {
 
 #main .img img {
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: -9px;
   margin-bottom: 70px;
   height: 80vh;
 }
@@ -638,10 +639,22 @@ footer button:hover {
 @media screen and (min-width: 1440px) {
   article .artic2 .text {
     background-color: #d9d9d9;
-    padding: 0px 60px 30px 20px;
+    padding: 0px 20px 30px 20px;
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    height: 62vh;
+  }
+  article .artic2 .text h3 {
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+  }
+  #main1 {
+    padding-bottom: 80px;
+  }
+  #solusi {
+    padding-bottom: 80px;
   }
 }
 
@@ -1138,7 +1151,7 @@ footer button:hover {
   main .main-text {
     color: #fff;
     margin-left: 0px;
-    margin-bottom: -10vh;
+    margin-bottom: -20vh;
     line-height: 0;
     letter-spacing: 2px;
   }
