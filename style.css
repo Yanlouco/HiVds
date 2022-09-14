@@ -227,7 +227,6 @@ article .artic2 .text {
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  height: 450px;
 }
 
 article .artic2 .text h1 {
@@ -239,10 +238,6 @@ article .artic2 .text h1 {
 article .artic2 .text h3 {
   text-align: center;
   color: #000;
-  font-size: 25px;
-}
-article .artic3 .text h3 {
-  font-size: 23px;
 }
 
 article .artic3 .text {
@@ -261,6 +256,7 @@ article .artic3 .text h1 {
 article .artic3 .text h3 {
   text-align: center;
   color: #000;
+  font-size: 19px;
 }
 
 article .imaga {
@@ -654,6 +650,7 @@ footer button:hover {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
     border-radius: 20px;
+    margin-left: 0px;
     margin-right: 20px;
     height: 600px;
   }
@@ -684,10 +681,34 @@ footer button:hover {
     text-align: left;
     font-size: 20px;
   }
-  article .artic2 .text h3 {
-    text-align: center;
-    color: #000;
-    font-size: 23px;
+}
+
+@media screen and (max-width: 1439px) {
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 550px;
+    font-size: 19px;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 600px;
+    font-size: 17.5px;
+  }
+  article .artic1 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 450px;
   }
 }
 
@@ -702,7 +723,16 @@ footer button:hover {
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 500px;
+    font-size: 16px;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 600px;
+    font-size: 13px;
   }
 }
 
@@ -726,17 +756,16 @@ footer button:hover {
   article .artic .text {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
-    height: 500px;
   }
   article .artic2 .text {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
-    height: 550px;
+    height: 20vh;
   }
   article .artic3 .text {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
-    height: 600px;
+    height: 30vh;
   }
   article img {
     margin: 20px 10px;
@@ -1144,6 +1173,16 @@ footer button:hover {
   footer .foot .foot-kasus .dirawat {
     margin-top: 6vh;
   }
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    height: 30vh;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    height: 40vh;
+  }
 }
 
 /* Layar HP - TABLET */
@@ -1426,6 +1465,21 @@ footer button:hover {
   footer .foot .foot-kasus .dirawat {
     margin-top: 0vh;
   }
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    height: 45vh;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    height: 70vh;
+  }
+  article .artic3 .text h3 {
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+  }
 }
 
 /* Custom */
@@ -1449,6 +1503,21 @@ footer button:hover {
     margin-left: 0px;
     margin-top: 100px;
     height: 55vh;
+  }
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    height: 50vh;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    height: 80vh;
+  }
+  article .artic3 .text h3 {
+    text-align: center;
+    color: #000;
+    font-size: 13px;
   }
 }
 
@@ -1696,6 +1765,24 @@ footer button:hover {
     border: none;
     background: #ff6262;
     border-radius: 5px;
+  }
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    height: 40vh;
+  }
+  article .artic2 .text h3 {
+    font-size: 10px;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    height: 70vh;
+  }
+  article .artic3 .text h3 {
+    text-align: center;
+    color: #000;
+    font-size: 13px;
   }
 }
 
