@@ -227,6 +227,7 @@ article .artic2 .text {
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  height: 450px;
 }
 
 article .artic2 .text h1 {
@@ -649,7 +650,6 @@ footer button:hover {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
     border-radius: 20px;
-    margin-left: 20px;
     margin-right: 20px;
     height: 600px;
   }
@@ -693,6 +693,7 @@ footer button:hover {
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    height: 500px;
   }
 }
 
@@ -716,14 +717,17 @@ footer button:hover {
   article .artic .text {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
+    height: 500px;
   }
   article .artic2 .text {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
+    height: 550px;
   }
   article .artic3 .text {
     background-color: #d9d9d9;
     padding: 0px 20px 30px 20px;
+    height: 600px;
   }
   article img {
     margin: 20px 10px;
