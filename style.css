@@ -236,9 +236,11 @@ article .artic2 .text h1 {
   padding-top: 40px;
 }
 
-article .artic2 .text h3 {
+article .artic2 .text h3,
+article .artic3 .text h3 {
   text-align: center;
   color: #000;
+  font-size: 23px;
 }
 
 article .artic3 .text {
@@ -680,8 +682,10 @@ footer button:hover {
     text-align: left;
     font-size: 20px;
   }
-  .foot .foot-text p {
-    font-size: 18px;
+  article .artic2 .text h3 {
+    text-align: center;
+    color: #000;
+    font-size: 23px;
   }
 }
 
