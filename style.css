@@ -643,7 +643,23 @@ footer button:hover {
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 72vh;
+    height: 550px;
+  }
+  article .artic3 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 600px;
+  }
+  article .artic1 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 450px;
   }
   article .artic2 .text h3 {
     text-align: center;
@@ -655,6 +671,14 @@ footer button:hover {
   }
   #solusi {
     padding-bottom: 80px;
+  }
+  #main1 p,
+  h3 {
+    text-align: center;
+    margin: 30px;
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -1692,6 +1716,15 @@ footer button:hover {
     margin-bottom: -40vh;
     line-height: 0;
     letter-spacing: 2px;
+  }
+}
+
+/* Custom */
+@media screen and (max-width: 320px) {
+  main .image img {
+    margin-left: 0px;
+    margin-top: 250px;
+    height: 35vh;
   }
 }
 
