@@ -643,7 +643,7 @@ footer button:hover {
     border-radius: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 62vh;
+    height: 72vh;
   }
   article .artic2 .text h3 {
     text-align: center;
@@ -662,6 +662,13 @@ footer button:hover {
 @media screen and (max-width: 1280px) {
   .foot .foot-text p {
     font-size: 15px;
+  }
+  article .artic2 .text {
+    background-color: #d9d9d9;
+    padding: 0px 20px 30px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
